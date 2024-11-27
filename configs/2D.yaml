@@ -1,0 +1,41 @@
+example:  KS_ns #MT #KS #NSV_two_dim
+n_interior: 1024
+n_boundary: 256
+epochs: 12000 
+soln_model_name: DrrnnWithSpecificBC
+soln_model_args:
+  width: 80
+  depth: 4
+  activation: Tanh 
+lr_soln: 0.003  
+lr_testfn: 0.0047  
+lr_scheduler_soln: "CosineAnnealingWarmRestarts"
+lr_scheduler_soln_args:
+  T_0: 2001
+  T_mult: 2
+lr_scheduler_testfn: "CosineAnnealingWarmRestarts"
+lr_scheduler_testfn_args:
+  T_0: 2001
+  T_mult: 2
+seed: 123
+optim_soln: AdamW
+optim_testfn: AdamW
+weight_b: 0
+weight_soln_obs: 5000
+weight_testfn_obs: 5000
+weight_b_test: 0
+print_freq: 1000
+eval_freq: 1000
+weight_gap_term: 0.0005
+testfn_model_name: DrrnnWithSpecificBC
+testfn_model_args:
+  width: 80
+  depth: 4
+  activation: Tanh 
+loss_name: RegularisedGapLoss
+use_H1_norm_for_gap_term: True
+force_bc: False
+chpt_folder: './plots/KS_ns/'
+use_uniform_grid_for_eval: True
+max_step_period: 2  
+save_plots: False

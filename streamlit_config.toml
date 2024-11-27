@@ -1,0 +1,11 @@
+[theme]
+primaryColor = "#ff0000"
+backgroundColor = "#f0f0f0"
+secondaryBackgroundColor = "#e0e0e0"
+textColor = "#000000"
+
+[server]
+port = 8801
+
+[browser]
+gatherUsageStats = false
