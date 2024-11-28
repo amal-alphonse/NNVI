@@ -1,7 +1,7 @@
 # NNVI
 
 ## Introduction
-A Python implementation of the obstacle problem solver described in the paper **A neural network approach to learning solutions of a class of elliptic variational inequalities**, A. Alphonse, M. Hintermüller, A. Kister, C. H. Lun and C. Sirotenko, [arXiv](http://www.test.com).
+A Python implementation of the obstacle problem solver described in the paper **A neural network approach to learning solutions of a class of elliptic variational inequalities**, A. Alphonse, M. Hintermüller, A. Kister, C. H. Lun and C. Sirotenko, [arXiv](https://arxiv.org/pdf/2411.18565).
 
 ## Usage
 The code is tested with Python 3.11. First install the dependencies by running:
